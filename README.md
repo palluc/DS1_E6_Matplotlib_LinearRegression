@@ -6,69 +6,36 @@ Decision Science 1 Class - Exercise 6
 ## Exploring Matplotlib and Linear Regression
 
 #### Objective
-The purpose of this program is to use a web URL API to conbsume their data and retrieve data in JSON format. The URl to extract data from is <a href="www.pokeapi.co" target="_blank">Pokemon website</a>.
-Matplotlib is a Python library for data visualization, primarily used to create static, animated, and interactive plots. It provides a wide range of plotting functions to visualize data effectively.
-
-The steps followed are:
-- Extract 20 pokémon characters by calling the pokemon endpoint https://pokeapi.co/api/v2/pokemon
-- For each Pokémon character obtain its height and weight. by calling: https://pokeapi.co/api/v2/pokemon/{id} and store it in a tuple as (name, height, weight)
-- Load the list to dataframe (DF)
+The purpose of this program is to use the matplotlib Python library as a data visualization tool to graph data between car weight and miles per gallon driven.   On the same plot use linear regression function to plot line for the variables weight and mpg and predict the mpg for vehicules of the weights 2.5, 3.5 and 4.5 tons.
 
 #### Tools Used
 Required tools to run the program are :</br>
 \- Jupyter Notebook (It is recommended to install full Python distribution with Anaconda Python distribtion) </br>
+\- Car data in a csv file format containing the columns: model,mpg,cyl,disp,hp,drat,wt,qsec,vs,am,gear,carb</br>
 
 #### Program walk-through
 - Launch the Jupyter Notebook: <br/>
 <p style="border: 2px solid #000000; padding: 1px;">
 <table><tr><td>
-<img src="https://github.com/user-attachments/assets/0898a37d-9d86-44b4-aa15-8d237175fc76" width="80%" height="50%" alt="Launch the Jupyter Notebook" />
+<img src="https://github.com/user-attachments/assets/3c5112d2-6430-4258-90a1-87f0c0096729" width="80%" height="50%" alt="Launch the Jupyter Notebook" />
 </td></tr></table>
 </p>
 </br>
 
-- Extract 20 pokémon characters using the pokemon endpoint https://pokeapi.co/api/v2/pokemon: </br>
+- Read in the data from a CSV file and view the data: <br/>
 <p style="border: 2px solid #000000; padding: 1px;">
 <table><tr><td>
-<img src="https://github.com/user-attachments/assets/adad8478-709b-431e-b637-1d933fac8a6b" width="80%" height="50%" alt="Call API" />
-<img src="https://github.com/user-attachments/assets/139eae56-a06d-4631-b924-3cdc57fc2c2c" width="80%" height="50%" alt="Extract pokemon characters" />
-</td></tr></table>
-</p>
-</br>
-
-- View extracted data: <br/>
-<p style="border: 2px solid #000000; padding: 1px;">
-<table><tr><td>
-<img src="https://github.com/user-attachments/assets/b87c0d6f-fbd3-4cd6-907a-b2af7e77bedc" width="80%" height="50%" alt="View pokemon data"/>
+<img src="https://github.com/user-attachments/assets/b9e0df24-6e5a-4718-95c1-4f901b78d5e3" width="80%" height="50%" alt="View car data"/>
 </td></tr>  
 </table>
 </p>
 </br>
 
-- For each Pokemon retrieve height and weight data and then view the data: <br/>
-<p style="border: 2px solid #000000; padding: 1px;">
-<table><tr><td>
-<img src="https://github.com/user-attachments/assets/a6472583-cc0c-4b10-924c-68064e09166b" width="80%" height="50%" alt="Extract height and weight"/>
-</td></tr>
-<tr><td>
-<img src="https://github.com/user-attachments/assets/2f3c871b-15fd-4fb1-8dda-7ba97b7fe19c" width="80%" height="50%" alt="View pokemon data in a tuple datatype"/>
-</td></tr></table>
-</p>
-</br>
-
-- Load into a dataframe (DF): <br/>
-<p style="border: 2px solid #000000; padding: 1px;">
-<table><tr><td>
-<img src="https://github.com/user-attachments/assets/607284a9-70dd-4b1f-bbfb-384a96020e10" height="80%" width="50%" alt="Load to DF" style="border: 2px solid black;"/>
-</td></tr></table>
-</p>
-</br>
-
-- Print DF summary:
+- Show the scatter and linear regression plot with an annotation for the predicted value corresponding to the 4.5 tons weight: </br>
 <p style="border: 2px solid #000000; padding: 1px;">
 <table>
 <tr><td> 
-<img src="https://github.com/user-attachments/assets/cb570bf6-6b78-42bb-a2de-ec45aa2505de" height="80%" width="70%" alt="DF count" style="border: 2px solid black;"/></br>
+<img src="https://github.com/user-attachments/assets/91370a02-1097-43a9-be9c-b739f58d1250" height="80%" width="70%" alt="Show plot" style="border: 2px solid black;"/></br>
 </td></tr>
 </table>
 </p>
