@@ -1,4 +1,3 @@
-Exploring Matplotlib and Linear Regression
 <!---
 Decision Science 1 Class - Exercise 6
 # DS1_E6_Matplotlib_LinearRegression
